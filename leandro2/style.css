@@ -1,0 +1,762 @@
+/* =========================================================
+   LEANDRO LOCSIN EXHIBIT — shared stylesheet
+   Look carried over from draft.html: green curtain hero,
+   tilted frame, Georgia headings, scrolling bar, green cards.
+   ========================================================= */
+
+/* ---------- COLORS (change them here!) ---------- */
+:root {
+  --green-dark: #022b1e;   /* deep background green */
+  --green-main: #006a4e;   /* La Salle style green */
+  --green-soft: #3f6e5b;   /* second card / quiet panels */
+  --green-light: #7fd1ae;  /* soft light green for accents */
+  --cream: #eef5e9;        /* text color */
+  --muted: #c5d6cc;        /* small print */
+
+  --serif: Georgia, "Times New Roman", serif;
+  --sans: Arial, Helvetica, sans-serif;
+
+  --page: 900px;           /* content width */
+}
+
+/* ---------- BASIC SETUP ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: #000;
+  color: var(--cream);
+  font-family: var(--sans);
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+
+a { color: var(--green-light); }
+
+:focus-visible {
+  outline: 3px solid var(--green-light);
+  outline-offset: 3px;
+}
+
+/* skip link for keyboard users */
+.skip {
+  position: absolute;
+  left: 12px;
+  top: -60px;
+  z-index: 100;
+  padding: 10px 16px;
+  background: var(--green-light);
+  color: #000;
+  font-weight: bold;
+}
+.skip:focus { top: 12px; }
+
+/* ---------- SITE HEADER / NAV ---------- */
+.site-header {
+  background: var(--green-dark);
+  border-bottom: 1px solid var(--green-main);
+}
+
+.bar {
+  max-width: var(--page);
+  margin: 0 auto;
+  padding: 12px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px 24px;
+}
+
+.brand {
+  font-family: var(--serif);
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: var(--cream);
+  text-decoration: none;
+}
+
+.site-header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px 18px;
+}
+
+.site-header nav a {
+  display: inline-block;
+  padding: 8px 0;
+  font-size: 14px;
+  color: var(--muted);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+
+.site-header nav a:hover { color: var(--cream); }
+
+.site-header nav a[aria-current="page"] {
+  color: var(--green-light);
+  border-bottom-color: var(--green-light);
+}
+
+@media (min-width: 700px) {
+  .site-header { position: sticky; top: 0; z-index: 50; }
+}
+
+/* ---------- HERO (green curtain) ---------- */
+.hero {
+  position: relative;
+  padding: 60px 20px 90px 20px;
+  /* vertical stripes = curtain folds, plus a dark fade at the bottom */
+  background:
+    linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.9)),
+    repeating-linear-gradient(
+      90deg,
+      #01261a 0px,
+      var(--green-main) 22px,
+      #013d2c 44px
+    );
+}
+
+.hero-inner {
+  max-width: var(--page);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* picture frame (light green) — tilted like a hung portrait */
+.frame {
+  flex: 0 0 150px;
+  height: 180px;
+  border: 8px solid var(--green-light);
+  background: #ccc;
+  color: #333;
+  transform: rotate(-4deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+  overflow: hidden;
+}
+
+.frame img { width: 100%; height: 100%; object-fit: cover; }
+
+.hero-text small {
+  display: block;
+  max-width: 320px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--muted);
+  margin-bottom: 15px;
+}
+
+.hero-text h1 {
+  margin: 0;
+  font-family: var(--serif);
+  font-weight: normal;
+  font-size: clamp(26px, 5vw, 42px);
+  letter-spacing: 1px;
+  line-height: 1.15;
+}
+
+/* smaller curtain used on inner pages */
+.hero--page { padding: 44px 20px 64px 20px; }
+
+/* ---------- GENERAL SECTION WIDTH ---------- */
+.section {
+  max-width: var(--page);
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+.section h2 {
+  font-family: var(--serif);
+  font-weight: normal;
+  font-size: clamp(24px, 4vw, 32px);
+  line-height: 1.2;
+  color: var(--green-light);
+  margin: 0 0 15px 0;
+}
+
+.prose p {
+  font-size: 16px;
+  line-height: 1.75;
+  max-width: 66ch;
+  margin: 0 0 1.1em 0;
+}
+
+.prose p:last-child { margin-bottom: 0; }
+
+/* ---------- PHOTO WITH CAPTION ---------- */
+.photo-block { text-align: center; }
+
+.placeholder {
+  background: #555;
+  color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.photo-block .photo {
+  width: 100%;
+  max-width: 480px;
+  aspect-ratio: 16 / 9;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+.photo-block figcaption {
+  font-size: 13px;
+  line-height: 1.6;
+  max-width: 460px;
+  margin: 20px auto 0 auto;
+  color: var(--muted);
+}
+
+/* ---------- SCROLLING TEXT BAR ---------- */
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 15px 0;
+  border-top: 1px solid var(--green-main);
+  border-bottom: 1px solid var(--green-main);
+  background: var(--green-dark);
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 40s linear infinite;
+}
+
+/* two identical groups, so the loop is seamless at any screen width */
+.marquee-group {
+  display: flex;
+  flex-shrink: 0;
+  min-width: 100vw;
+  justify-content: space-around;
+}
+
+.marquee-group span {
+  color: var(--green-light);
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 2px;
+  padding: 0 1.2em;
+}
+
+.marquee-group span::after {
+  content: "+";
+  margin-left: 2.4em;
+}
+
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* ---------- MEMORY CARDS (links to the other rooms) ---------- */
+.cards {
+  display: flex;
+  flex-wrap: wrap;          /* cards stack on small screens */
+  gap: 30px;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  display: block;
+  flex: 1 1 280px;          /* grow, shrink, min width 280px */
+  max-width: 400px;
+  height: 340px;
+  background: var(--green-main);
+  /* to add a photo: style="--card-img: url('photo.jpg')" on the card */
+  background-image: var(--card-img, none);
+  background-size: cover;
+  background-position: center;
+  color: var(--cream);
+  text-decoration: none;
+  overflow: hidden;
+}
+
+/* dark fade so the text stays readable over photos */
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 35%, rgba(0,0,0,0.65));
+}
+
+.card:nth-child(even) {
+  background-color: var(--green-soft);
+  margin-top: 20px;         /* little offset like the original */
+}
+
+.card-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.7);
+}
+
+.card h3 {
+  margin: 0 0 6px 0;
+  font-family: var(--serif);
+  font-weight: normal;
+  font-size: 22px;
+  color: #fff;
+}
+
+.card p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.card:hover,
+.card:focus-visible {
+  box-shadow: inset 0 0 0 4px var(--green-light);
+}
+
+/* ---------- TIMELINE (biography, legacy) ---------- */
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 22px;
+  border-left: 2px solid var(--green-main);
+}
+
+.timeline li {
+  position: relative;
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 8px 24px;
+  padding: 0 0 34px 0;
+}
+
+.timeline li:last-child { padding-bottom: 0; }
+
+/* small dot on the line */
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: -29px;
+  top: 8px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--green-light);
+}
+
+.timeline .year {
+  font-family: var(--serif);
+  font-size: 21px;
+  line-height: 1.3;
+  color: var(--green-light);
+}
+
+.timeline h3 {
+  margin: 0 0 4px 0;
+  font-family: var(--serif);
+  font-weight: normal;
+  font-size: 19px;
+}
+
+.timeline p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--muted);
+  max-width: 60ch;
+}
+
+/* ---------- WORKS GALLERY ---------- */
+.works {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 36px 30px;
+}
+
+.work .placeholder {
+  aspect-ratio: 4 / 3;
+  width: 100%;
+  object-fit: cover;
+}
+
+.work .meta {
+  margin: 14px 0 4px 0;
+  font-size: 13px;
+  color: var(--green-light);
+}
+
+.work h3 {
+  margin: 0 0 8px 0;
+  font-family: var(--serif);
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 1.25;
+}
+
+.work p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--muted);
+}
+
+/* ---------- PRINCIPLES (philosophy) ---------- */
+.principles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.principle {
+  padding: 22px 22px 26px 22px;
+  background: var(--green-dark);
+  border-top: 4px solid var(--green-main);
+}
+
+.principle h3 {
+  margin: 0 0 10px 0;
+  font-family: var(--serif);
+  font-weight: normal;
+  font-size: 22px;
+  color: var(--green-light);
+}
+
+.principle p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* ---------- PREVIOUS / NEXT ROOM ---------- */
+.pager {
+  max-width: var(--page);
+  margin: 0 auto;
+  padding: 10px 20px 60px 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font-family: var(--serif);
+}
+
+.pager a {
+  display: inline-block;
+  padding: 12px 18px;
+  border: 1px solid var(--green-main);
+  color: var(--cream);
+  text-decoration: none;
+}
+
+.pager a:hover { background: var(--green-main); }
+.pager .next { margin-left: auto; text-align: right; }
+
+/* ---------- FOOTER ---------- */
+.site-footer {
+  background: var(--green-dark);
+  border-top: 1px solid var(--green-main);
+  padding: 30px 20px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.site-footer .inner {
+  max-width: var(--page);
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 14px 30px;
+}
+
+.site-footer p { margin: 0; }
+
+.site-footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+}
+
+.site-footer a { color: var(--muted); }
+.site-footer a:hover { color: var(--cream); }
+
+/* ---------- PHONE TWEAKS ---------- */
+@media (max-width: 600px) {
+  .hero { padding: 40px 20px 60px 20px; }
+
+  /* stack the frame on top of the text */
+  .hero-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text small { margin-left: auto; margin-right: auto; }
+
+  .hero--page .hero-inner { text-align: left; align-items: flex-start; }
+  .hero--page .hero-text small { margin-left: 0; }
+
+  .card:nth-child(even) { margin-top: 0; }
+  .card { height: 280px; }
+
+  .timeline li { grid-template-columns: 1fr; gap: 4px; }
+
+  .pager { flex-direction: column; }
+  .pager .next { margin-left: 0; text-align: left; }
+}
+
+/* ---------- RESPECT "REDUCE MOTION" SETTING ---------- */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .marquee-track { animation: none; }
+}
+
+/* =========================================================
+   ADDITIONS FOR THE FULL CONTENT
+   ========================================================= */
+
+section[id] { scroll-margin-top: 70px; }
+
+/* ---------- PROSE EXTRAS ---------- */
+.prose h3 {
+  margin: 30px 0 8px 0;
+  font-family: var(--serif);
+  font-weight: normal;
+  font-size: 21px;
+  color: var(--cream);
+}
+
+.prose ul {
+  max-width: 66ch;
+  margin: 0 0 1.1em 0;
+  padding-left: 22px;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.prose li { margin-bottom: 4px; }
+
+/* ---------- "ON THIS PAGE" LINKS (long pages) ---------- */
+.toc {
+  max-width: var(--page);
+  margin: 0 auto;
+  padding: 28px 20px 0 20px;
+}
+
+.toc p { margin: 0 0 10px 0; font-size: 13px; color: var(--muted); }
+
+.toc ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.toc a {
+  display: inline-block;
+  padding: 7px 14px;
+  border: 1px solid var(--green-main);
+  color: var(--cream);
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.toc a:hover { background: var(--green-main); }
+
+/* ---------- BASIC INFORMATION CARD ---------- */
+.info {
+  margin: 0;
+  display: grid;
+  grid-template-columns: minmax(140px, 220px) 1fr;
+  border: 1px solid var(--green-main);
+  background: var(--green-dark);
+}
+
+.info dt, .info dd {
+  margin: 0;
+  padding: 13px 18px;
+  border-bottom: 1px solid #0a3a2b;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.info dt { font-family: var(--serif); color: var(--green-light); }
+.info dt:nth-last-of-type(1), .info dd:nth-last-of-type(1) { border-bottom: 0; }
+
+/* ---------- FUN FACT CALLOUTS (tap to open) ---------- */
+.facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  align-items: start;
+}
+
+.fact { background: var(--green-main); }
+.fact:nth-child(even) { background: var(--green-soft); }
+
+.fact summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 16px 18px;
+  cursor: pointer;
+  list-style: none;
+  font-family: var(--serif);
+  font-size: 18px;
+  color: #fff;
+}
+
+.fact summary::-webkit-details-marker { display: none; }
+.fact summary::after { content: "+"; flex-shrink: 0; }
+.fact[open] summary::after { content: "\2212"; }
+
+.fact p {
+  margin: 0;
+  padding: 0 18px 18px 18px;
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+/* ---------- FEATURED WORK (works page) ---------- */
+.feature {
+  padding: 0 0 46px 0;
+  margin: 0 0 46px 0;
+  border-bottom: 1px solid var(--green-main);
+}
+
+.feature:last-child { border-bottom: 0; margin-bottom: 0; padding-bottom: 0; }
+
+.feature .placeholder { aspect-ratio: 16 / 9; width: 100%; }
+
+.feature h3 {
+  margin: 20px 0 10px 0;
+  font-family: var(--serif);
+  font-weight: normal;
+  font-size: clamp(22px, 3.5vw, 28px);
+  line-height: 1.2;
+}
+
+.spec {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 26px;
+  margin: 0 0 14px 0;
+  font-size: 14px;
+}
+
+.spec div { display: flex; gap: 6px; }
+.spec dt { color: var(--green-light); }
+.spec dd { margin: 0; }
+
+.feature .evolution {
+  margin: 0 0 22px 0;
+  max-width: 66ch;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.analysis {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 22px;
+}
+
+/* ---------- PRINCIPLE BOXES: LISTS INSIDE ---------- */
+.principle h4 {
+  margin: 0 0 12px 0;
+  font-family: var(--serif);
+  font-weight: normal;
+  font-size: 19px;
+  color: var(--green-light);
+}
+
+.principle ul { margin: 0; padding-left: 18px; }
+.principle li { margin-bottom: 9px; font-size: 15px; line-height: 1.65; }
+.principle li:last-child { margin-bottom: 0; }
+.principle p + ul { margin-top: 12px; }
+.principle strong { font-family: var(--serif); font-weight: normal; color: var(--green-light); }
+
+/* ---------- SIDE-BY-SIDE COMPARISON ---------- */
+.compare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin: 26px 0 0 0;
+}
+
+.compare figure { margin: 0; }
+.compare .placeholder { aspect-ratio: 4 / 3; width: 100%; }
+.compare figcaption { margin-top: 10px; font-size: 13px; line-height: 1.6; color: var(--muted); }
+
+/* ---------- TERMS (elements and principles) ---------- */
+.terms {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px 30px;
+  margin: 0;
+}
+
+.terms div { border-left: 3px solid var(--green-main); padding-left: 16px; }
+.terms dt { margin-bottom: 4px; font-family: var(--serif); font-size: 20px; color: var(--green-light); }
+.terms dd { margin: 0; font-size: 15px; line-height: 1.65; color: var(--muted); }
+
+/* ---------- KEY WORDS ---------- */
+.prose .chips {
+  list-style: none;
+  margin: 24px 0 0 0;
+  padding: 0;
+  max-width: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.prose .chips li {
+  margin: 0;
+  padding: 8px 16px;
+  border: 1px solid var(--green-light);
+  color: var(--green-light);
+  font-family: var(--serif);
+  font-style: italic;
+}
+
+/* ---------- STILL-TO-FILL NOTES ---------- */
+.todo {
+  max-width: 66ch;
+  margin: 0;
+  padding: 16px 18px;
+  border: 1px dashed var(--green-light);
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+/* ---------- PHONE TWEAKS FOR THE ADDITIONS ---------- */
+@media (max-width: 600px) {
+  .info { grid-template-columns: 1fr; }
+  .info dt { border-bottom: 0; padding-bottom: 0; }
+  .compare { grid-template-columns: 1fr; }
+}
