@@ -233,8 +233,8 @@ img {
   box-sizing: border-box;
   
   /* Dark Green Overlay + Background Image */
-  background: linear-gradient(rgba(27, 33, 26, 0.88), rgba(27, 33, 26, 0.95)),
-              url('assets/images/ccp.jpg') center/cover no-repeat;
+  background: linear-gradient(rgba(27, 33, 26, 0.95), rgba(27, 33, 26, 0.65)),
+              url('../assets/images/building photos/Philippine International Convention Center/Leandro Locsin.jpg') center/cover no-repeat;
   color: var(--warm-beige);
 }
 
@@ -642,16 +642,16 @@ img {
 
 /* Image Backgrounds */
 .exhibit-card--biography {
-  background-image: url('assets/images/portrait/locsin-official.jpg');
+  background-image: url('../assets/images/photos of leandro/working and drawing/Locsin3.jpg');
 }
 .exhibit-card--philosophy {
-  background-image: url('assets/images/ccp.jpg');
+  background-image: url('../assets/images/building photos/Chapel of the Holy Sacrifice/interior/interior1.jpg');
 }
 .exhibit-card--works {
-  background-image: url('assets/images/ccp.jpg');
+  background-image: url('../assets/images/building photos/Philippine International Convention Center/Environmental-Responsibility-in-Venue-Management-and-Operations-scaled.jpg');
 }
 .exhibit-card--legacy {
-  background-image: url('assets/images/portrait/locsin-official.jpg');
+  background-image: url('../assets/images/photos of leandro/working and drawing/Locsin1.jpg');
 }
 
 /* ==========================================================================
