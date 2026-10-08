@@ -42,7 +42,8 @@ h1, h2, h3, h4, h5, h6,
 .lx-title,
 .lx-home-title-sub,
 .lx-brand-copy strong,
-.lx-kicker,
+.lx-kicker-light,
+.lx-kicker-dark,
 .info-card dt,
 .fact-card summary,
 .exhibit-card-title {
@@ -244,7 +245,7 @@ img {
   max-width: 560px;
 }
 
-.lx-kicker {
+.lx-kicker-light {
   display: inline-flex;
   align-items: center;
   gap: 12px;
@@ -256,12 +257,32 @@ img {
   margin-bottom: 14px;
 }
 
-.lx-kicker::before {
+.lx-kicker-light::before {
   content: "";
   display: block;
   width: 28px;
   height: 2px;
   background: var(--highlight-green);
+}
+
+.lx-kicker-dark {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--bg-dark);
+  margin-bottom: 14px;
+}
+
+.lx-kicker-dark::before {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 2px;
+  background: var(--bg-dark);
 }
 
 /* LEANDRO V. LOCSIN TITLE */
