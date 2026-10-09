@@ -1,11 +1,586 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Works of Leandro Locsin</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Curated exhibition gallery of major Leandro V. Locsin works and the Philippine Pavilion at Expo '70.">
+  <title>Works — Leandro V. Locsin Exhibit</title>
+
+  <!-- Font Imports: Space Grotesk + Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <!-- ===== HEADER / NAVIGATION ===== -->
+  <header class="lx-header" id="main-header">
+    <a class="lx-brand" href="index.html" aria-label="Leandro Locsin exhibition home">
+      <span class="lx-brand-mark" aria-hidden="true">
+        <i></i><i></i><i></i>
+      </span>
+      <span class="lx-brand-copy">
+        <strong>LEANDRO V. LOCSIN</strong>
+        <small>ARCHITECT OF A NATION</small>
+      </span>
+    </a>
+
+    <nav class="lx-nav" id="primary-nav" aria-label="Primary navigation">
+      <a href="index.html"><span class="lx-nav-number">01</span>Exhibit</a>
+      <a href="biography.html"><span class="lx-nav-number">02</span>Biography</a>
+      <a href="philosophy.html"><span class="lx-nav-number">03</span>Philosophy</a>
+      <a href="works.html" aria-current="page"><span class="lx-nav-number">04</span>Works</a>
+      <a href="legacy.html"><span class="lx-nav-number">05</span>Legacy</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="section section--dark" id="hero" style="position: relative; min-height: 76vh; display: flex; align-items: center; background: linear-gradient(rgba(27, 33, 26, 0.92), rgba(27, 33, 26, 0.72)), url('assets/images/building photos/Philippine International Convention Center/Environmental-Responsibility-in-Venue-Management-and-Operations-scaled.jpg') center/cover no-repeat; padding-top: 180px; padding-bottom: 120px;">
+      <div class="section-heading" style="max-width: 960px; margin-bottom: 0;">
+        <p class="lx-kicker-light" style="font-size: 13px; letter-spacing: 0.22em;">Phase II · Curated Exhibition Gallery</p>
+        <h1 style="font-size: clamp(52px, 7vw, 92px); color: var(--warm-beige); line-height: 1.02; margin-bottom: 22px;">Featured Works</h1>
+        <p class="section-intro" style="font-size: 22px; line-height: 1.75; color: rgba(235, 213, 171, 0.92); max-width: 820px;">
+          Case studies tracing Locsin's structural language from sacred space to national culture, civic infrastructure, royal architecture, and international exhibition design.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== ENLARGED ON-PAGE NAVIGATION BAR ===== -->
+    <section class="section section--dark" id="toc-nav" style="padding-top: 36px; padding-bottom: 36px; border-top: 1px solid rgba(235,213,171,0.15); border-bottom: 1px solid rgba(235,213,171,0.15); background: var(--bg-dark);">
+      <div class="info-grid" style="grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 16px; margin: 0;">
+        <a class="info-card" href="#holy-sacrifice" style="min-height: auto; padding: 20px 22px; text-decoration: none; border-color: rgba(235, 213, 171, 0.25);">
+          <dt style="font-size: 12.5px; font-weight: 700; margin-bottom: 6px; letter-spacing: 0.1em;">01. Sacred Space</dt>
+          <dd style="font-size: 16px; font-weight: 600; color: var(--warm-beige); line-height: 1.35;">Chapel of the Holy Sacrifice</dd>
+        </a>
+        <a class="info-card" href="#ccp" style="min-height: auto; padding: 20px 22px; text-decoration: none; border-color: rgba(235, 213, 171, 0.25);">
+          <dt style="font-size: 12.5px; font-weight: 700; margin-bottom: 6px; letter-spacing: 0.1em;">02. Culture &amp; Arts</dt>
+          <dd style="font-size: 16px; font-weight: 600; color: var(--warm-beige); line-height: 1.35;">Cultural Center of the Philippine</dd>
+        </a>
+        <a class="info-card" href="#picc" style="min-height: auto; padding: 20px 22px; text-decoration: none; border-color: rgba(235, 213, 171, 0.25);">
+          <dt style="font-size: 12.5px; font-weight: 700; margin-bottom: 6px; letter-spacing: 0.1em;">03. Civic Architecture</dt>
+          <dd style="font-size: 16px; font-weight: 600; color: var(--warm-beige); line-height: 1.35;">PH International Convention Center</dd>
+        </a>
+        <a class="info-card" href="#naia" style="min-height: auto; padding: 20px 22px; text-decoration: none; border-color: rgba(235, 213, 171, 0.25);">
+          <dt style="font-size: 12.5px; font-weight: 700; margin-bottom: 6px; letter-spacing: 0.1em;">04. Infrastructure</dt>
+          <dd style="font-size: 16px; font-weight: 600; color: var(--warm-beige); line-height: 1.35;">NAIA Terminal 1</dd>
+        </a>
+        <a class="info-card" href="#istana" style="min-height: auto; padding: 20px 22px; text-decoration: none; border-color: rgba(235, 213, 171, 0.25);">
+          <dt style="font-size: 12.5px; font-weight: 700; margin-bottom: 6px; letter-spacing: 0.1em;">05. Royal Residence</dt>
+          <dd style="font-size: 16px; font-weight: 600; color: var(--warm-beige); line-height: 1.35;">Istana Nurul Iman</dd>
+        </a>
+        <a class="info-card" href="#expo70" style="min-height: auto; padding: 20px 22px; text-decoration: none; border-color: rgba(235, 213, 171, 0.25);">
+          <dt style="font-size: 12.5px; font-weight: 700; margin-bottom: 6px; letter-spacing: 0.1em;">06. International</dt>
+          <dd style="font-size: 16px; font-weight: 600; color: var(--warm-beige); line-height: 1.35;">Expo '70 Pavilion</dd>
+        </a>
+        <a class="info-card" href="#more" style="min-height: auto; padding: 20px 22px; text-decoration: none; border-color: rgba(235, 213, 171, 0.25);">
+          <dt style="font-size: 12.5px; font-weight: 700; margin-bottom: 6px; letter-spacing: 0.1em;">07. Portfolio</dt>
+          <dd style="font-size: 16px; font-weight: 600; color: var(--warm-beige); line-height: 1.35;">More from Gallery</dd>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== FIVE FEATURED WORKS ===== -->
+
+    <!-- 1. CHAPEL OF THE HOLY SACRIFICE -->
+    <section class="section section--beige" id="holy-sacrifice" style="padding-top: 110px; padding-bottom: 110px;">
+      <div class="section-heading">
+        <p class="lx-kicker-dark">Famous Work · 01</p>
+        <h2>Chapel of the Holy Sacrifice</h2>
+      </div>
+
+      <div class="split-grid" style="align-items: start; margin-bottom: 36px;">
+        <!-- LEFT: MAIN IMAGE -->
+        <div class="split-image-col">
+          <figure class="photo-block">
+            <img src="assets/images/building photos/Chapel of the Holy Sacrifice/exterior/exterior1.jpg" alt="Chapel of the Holy Sacrifice exterior view" style="height: 480px; object-fit: cover;">
+            <figcaption>
+              <strong>Chapel of the Holy Sacrifice (1955)</strong> — UP Diliman, Quezon City. First thin-shell concrete dome constructed in the Philippines.
+            </figcaption>
+          </figure>
+        </div>
+
+        <!-- RIGHT: TWO SMALL PICTURE BOXES + METADATA + STYLISTIC EVOLUTION -->
+        <div class="split-text-col">
+          <!-- TWO SMALL PICTURE BOXES -->
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px;">
+            <figure class="photo-block" style="box-shadow: 4px 4px 0 var(--accent-green);">
+              <img src="assets/images/building photos/Chapel of the Holy Sacrifice/interior/interior1.jpg" alt="Chapel interior dome detail" style="height: 250px; object-fit: cover;">
+            </figure>
+            <figure class="photo-block" style="box-shadow: 4px 4px 0 var(--accent-green);">
+              <img src="assets/images/building photos/Chapel of the Holy Sacrifice/interior/interior2.jpg" alt="Chapel central altar perspective" style="height: 250px; object-fit: cover;">
+            </figure>
+          </div>
+
+          <!-- METADATA -->
+          <dl class="info-grid" style="grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 0 0 20px 0;">
+            <div class="info-card" style="min-height: auto; padding: 16px;">
+              <dt>Location</dt>
+              <dd style="font-size: 12px; color: var(--ink);">UP Diliman, Quezon City</dd>
+            </div>
+            <div class="info-card" style="min-height: auto; padding: 16px;">
+              <dt>Year</dt>
+              <dd style="font-size: 12px; color: var(--ink);">1955</dd>
+            </div>
+            <div class="info-card" style="min-height: auto; padding: 16px;">
+              <dt>Type</dt>
+              <dd style="font-size: 12px; color: var(--ink);">Religious Architecture</dd>
+            </div>
+          </dl>
+
+          <!-- STYLISTIC EVOLUTION -->
+          <div class="prose">
+            <p>
+              <strong>Stylistic Evolution:</strong> Represents Locsin's early breakthrough, showing his ability to innovate sacred space through modern structural engineering. A circular church covered by a thin concrete dome, it is widely regarded as a pioneering modernist church in the Philippines.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- BOTTOM: ELEMENTS & PRINCIPLES -->
+      <div class="facts-grid" style="grid-template-columns: repeat(2, 1fr); gap: 24px;">
+        <div class="fact-card" style="background: #e2cca1; border-color: var(--line);">
+          <summary style="color: var(--bg-dark);">Elements of Art</summary>
+          <ul style="margin-top: 12px; padding-left: 18px; font-size: 16px; line-height: 1.7; color: var(--ink);">
+            <li style="margin-bottom: 8px;"><strong>Line &amp; Form:</strong> Defined by a sweeping three-dimensional parabolic dome, the first thin-shell concrete dome constructed in the Philippines. Continuous curved lines create a clear dome of space unobstructed by interior load-bearing columns.</li>
+            <li><strong>Space &amp; Light:</strong> The open-air perimeter lacks exterior walls, permitting continuous cross-ventilation and natural daylight that connects the central altar to the surrounding natural environment.</li>
+          </ul>
+        </div>
+
+        <div class="fact-card" style="background: #e2cca1; border-color: var(--line);">
+          <summary style="color: var(--bg-dark);">Principles of Design</summary>
+          <ul style="margin-top: 12px; padding-left: 18px; font-size: 16px; line-height: 1.7; color: var(--ink);">
+            <li style="margin-bottom: 8px;"><strong>Radial Balance &amp; Unity:</strong> The circular footprint places the central altar at the focal center, drawing visual attention inward from every angle.</li>
+            <li><strong>Integration of Visual Arts:</strong> Structure and art work together through embedded works by fellow National Artists: terrazzo floor designs by Arturo Luz, murals of the Stations of the Cross by Vicente Manansala and Ang Kiukok, and a carved double-sided crucifix by Napoleon Abueva.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. CCP MAIN BUILDING -->
+    <section class="section section--dark" id="ccp" style="padding-top: 110px; padding-bottom: 110px;">
+      <div class="section-heading">
+        <p class="lx-kicker-light">Famous Work · 02</p>
+        <h2 style="color: var(--warm-beige);">Cultural Center of the Philippines <em style="color: #8bae66;">(CCP Main Building / Tanghalang Pambansa)</em></h2>
+      </div>
+
+      <div class="split-grid" style="align-items: start; margin-bottom: 36px;">
+        <!-- LEFT: MAIN IMAGE -->
+        <div class="split-image-col">
+          <figure class="photo-block" style="background: var(--bg-dark); border-color: rgba(235,213,171,0.3);">
+            <img src="assets/images/building photos/Cultural Center of the Philippines/Cultural Center of the Philippines.jpg" alt="Cultural Center of the Philippines Main Building" style="height: 480px; object-fit: cover;">
+            <figcaption style="background: #252d24; color: var(--warm-beige);">
+              <strong>CCP Main Building (1966–1969)</strong> — Pasay City. Iconic travertine floating volume suspended over a glass podium.
+            </figcaption>
+          </figure>
+        </div>
+
+        <!-- RIGHT: TWO SMALL PICTURE BOXES + METADATA + STYLISTIC EVOLUTION -->
+        <div class="split-text-col">
+          <!-- TWO SMALL PICTURE BOXES -->
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px;">
+            <figure class="photo-block" style="background: var(--bg-dark); border-color: rgba(235,213,171,0.3); box-shadow: 4px 4px 0 var(--accent-green);">
+              <img src="assets/images/building photos/Cultural Center of the Philippines/ccp-fountain.jpg" alt="CCP reflecting pool and fountain" style="height: 250px; object-fit: cover;">
+            </figure>
+            <figure class="photo-block" style="background: var(--bg-dark); border-color: rgba(235,213,171,0.3); box-shadow: 4px 4px 0 var(--accent-green);">
+              <img src="assets/images/building photos/Cultural Center of the Philippines/ccp-facade-detail.jpg" alt="CCP aggregate concrete facade detail" style="height: 250px; object-fit: cover;">
+            </figure>
+          </div>
+
+          <!-- METADATA -->
+          <dl class="info-grid" style="grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 0 0 20px 0;">
+            <div class="info-card" style="min-height: auto; padding: 16px;">
+              <dt>Location</dt>
+              <dd style="font-size: 16px;">CCP Complex, Pasay City</dd>
+            </div>
+            <div class="info-card" style="min-height: auto; padding: 16px;">
+              <dt>Construction</dt>
+              <dd style="font-size: 16px;">1966–1969</dd>
+            </div>
+            <div class="info-card" style="min-height: auto; padding: 16px;">
+              <dt>Type</dt>
+              <dd style="font-size: 16px;">Performing Arts Center</dd>
+            </div>
+          </dl>
+
+          <!-- STYLISTIC EVOLUTION -->
+          <div class="prose">
+            <p>
+              <strong>Stylistic Evolution:</strong> Marks the peak of Locsin's brutalist period and establishes his iconic floating volume technique on a national scale. His most famous project, the main theater building appears to hover over a recessed base and faces Manila Bay.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- BOTTOM: ELEMENTS & PRINCIPLES -->
+      <div class="facts-grid" style="grid-template-columns: repeat(2, 1fr); gap: 24px;">
+        <div class="fact-card">
+          <summary>Elements of Art</summary>
+          <ul style="margin-top: 12px; padding-left: 18px; font-size: 16px; line-height: 1.7; color: rgba(235, 213, 171, 0.88);">
+            <li style="margin-bottom: 8px;"><strong>Mass &amp; Texture:</strong> Dominated by an upper rectangular volume built from travertine aggregate concrete. The raw, textured surface emphasizes monumental solidity.</li>
+            <li><strong>Value (Chiaroscuro):</strong> Deeply recessed glass curtain walls underneath cast intense shadows, visually severing the upper block from its lower support structure.</li>
+          </ul>
+        </div>
+
+        <div class="fact-card">
+          <summary>Principles of Design</summary>
+          <ul style="margin-top: 12px; padding-left: 18px; font-size: 16px; line-height: 1.7; color: rgba(235, 213, 171, 0.88);">
+            <li style="margin-bottom: 8px;"><strong>Contrast &amp; Asymmetrical Balance:</strong> A massive 8-story concrete volume is suspended 12 meters outward over a glass podium and reflecting pools, setting structural weight against a floating effect.</li>
+            <li><strong>Scale &amp; Proportion:</strong> Designed on a monumental public scale, with an expansive podium drive that lifts the building above the reclaimed coastal landscape.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. PICC -->
+    <section class="section section--beige" id="picc" style="padding-top: 110px; padding-bottom: 110px;">
+      <div class="section-heading">
+        <p class="lx-kicker-dark">Famous Work · 03</p>
+        <h2>Philippine International Convention Center <em style="color: #628141;">(PICC)</em></h2>
+      </div>
+
+      <div class="split-grid" style="align-items: start; margin-bottom: 36px;">
+        <!-- LEFT: MAIN IMAGE -->
+        <div class="split-image-col">
+          <figure class="photo-block">
+            <img src="assets/images/building photos/Philippine International Convention Center/Leandro Locsin.jpg" alt="Philippine International Convention Center" style="height: 480px; object-fit: cover;">
+            <figcaption>
+              <strong>PICC (1976)</strong> — CCP Complex, Pasay City. Modular civic architecture designated as a National Cultural Treasure in 2022.
+            </figcaption>
+          </figure>
+        </div>
+
+        <!-- RIGHT: TWO SMALL PICTURE BOXES + METADATA + STYLISTIC EVOLUTION -->
+        <div class="split-text-col">
+          <!-- TWO SMALL PICTURE BOXES -->
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px;">
+            <figure class="photo-block" style="box-shadow: 4px 4px 0 var(--accent-green);">
+              <img src="assets/images/building photos/Philippine International Convention Center/picc-interior-hall.jpg" alt="PICC interior plenary hall coffered ceiling" style="height: 250px; object-fit: cover;">
+            </figure>
+            <figure class="photo-block" style="box-shadow: 4px 4px 0 var(--accent-green);">
+              <img src="assets/images/building photos/Philippine International Convention Center/picc-courtyard.jpg" alt="PICC courtyard and cantilevered overhangs" style="height: 250px; object-fit: cover;">
+            </figure>
+          </div>
+
+          <!-- METADATA -->
+          <dl class="info-grid" style="grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 0 0 20px 0;">
+            <div class="info-card" style="min-height: auto; padding: 16px;">
+              <dt>Location</dt>
+              <dd style="font-size: 12px; color: var(--ink);">CCP Complex, Pasay City</dd>
+            </div>
+            <div class="info-card" style="min-height: auto; padding: 16px;">
+              <dt>Opened</dt>
+              <dd style="font-size: 12px; color: var(--ink);">September 5, 1976</dd>
+            </div>
+            <div class="info-card" style="min-height: auto; padding: 16px;">
+              <dt>Type</dt>
+              <dd style="font-size: 12px; color: var(--ink);">Civic &amp; Convention Center</dd>
+            </div>
+          </dl>
+
+          <!-- STYLISTIC EVOLUTION -->
+          <div class="prose">
+            <p>
+              <strong>Stylistic Evolution:</strong> Shows Locsin's mastery of modular civic architecture, designed to manage international crowds while keeping spatial elegance. It is a major venue for state events and international meetings.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- BOTTOM: ELEMENTS & PRINCIPLES -->
+      <div class="facts-grid" style="grid-template-columns: repeat(2, 1fr); gap: 24px;">
+        <div class="fact-card" style="background: #e2cca1; border-color: var(--line);">
+          <summary style="color: var(--bg-dark);">Elements of Art</summary>
+          <ul style="margin-top: 12px; padding-left: 18px; font-size: 16px; line-height: 1.7; color: var(--ink);">
+            <li style="margin-bottom: 8px;"><strong>Line &amp; Form:</strong> Crisp horizontal lines, broad geometric cantilevers, and board-formed concrete surfaces that keep a wood-grain texture.</li>
+            <li><strong>Space:</strong> Expansive multi-level foyers, open plazas, and courtyard gardens give clear circulation across five distinct building modules.</li>
+          </ul>
+        </div>
+
+        <div class="fact-card" style="background: #e2cca1; border-color: var(--line);">
+          <summary style="color: var(--bg-dark);">Principles of Design</summary>
+          <ul style="margin-top: 12px; padding-left: 18px; font-size: 16px; line-height: 1.7; color: var(--ink);">
+            <li style="margin-bottom: 8px;"><strong>Rhythm &amp; Repetition:</strong> Modular concrete frames and cantilevered overhangs repeat across the façade, creating a structural visual rhythm.</li>
+            <li><strong>Proportion &amp; Structural Honesty:</strong> The exterior volumes correspond directly to the interior hall spaces, without decorative ornament.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. NAIA TERMINAL 1 -->
+    <section class="section section--dark" id="naia" style="padding-top: 110px; padding-bottom: 110px;">
+      <div class="section-heading">
+        <p class="lx-kicker-light">Famous Work · 04</p>
+        <h2 style="color: var(--warm-beige);">Ninoy Aquino International Airport Terminal 1 <em style="color: #8bae66;">(NAIA Terminal 1)</em></h2>
+      </div>
+
+      <div class="split-grid" style="align-items: start; margin-bottom: 36px;">
+        <!-- LEFT: MAIN IMAGE -->
+        <div class="split-image-col">
+          <figure class="photo-block" style="background: var(--bg-dark); border-color: rgba(235,213,171,0.3);">
+            <img src="assets/images/building photos/Manila International Airport Terminal 1 (now NAIA Terminal 1)/330px-NAIA_terminal_1_facade.jpg" alt="NAIA Terminal 1 Facade" style="height: 480px; object-fit: cover;">
+            <figcaption style="background: #252d24; color: var(--warm-beige);">
+              <strong>NAIA Terminal 1 (1981)</strong> — Parañaque City. Functional tropical modernist transit infrastructure.
+            </figcaption>
+          </figure>
+        </div>
+
+        <!-- RIGHT: TWO SMALL PICTURE BOXES + METADATA + STYLISTIC EVOLUTION -->
+        <div class="split-text-col">
+          <!-- TWO SMALL PICTURE BOXES -->
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px;">
+            <figure class="photo-block" style="background: var(--bg-dark); border-color: rgba(235,213,171,0.3); box-shadow: 4px 4px 0 var(--accent-green);">
+              <img src="assets/images/building photos/Manila International Airport Terminal 1 (now NAIA Terminal 1)/naia-interior.jpg" alt="NAIA Terminal 1 departure hall interior" style="height: 250px; object-fit: cover;">
+            </figure>
+            <figure class="photo-block" style="background: var(--bg-dark); border-color: rgba(235,213,171,0.3); box-shadow: 4px 4px 0 var(--accent-green);">
+              <img src="assets/images/building photos/Manila International Airport Terminal 1 (now NAIA Terminal 1)/naia-overhangs.jpg" alt="NAIA tropical overhanging eaves detail" style="height: 250px; object-fit: cover;">
+            </figure>
+          </div>
+
+          <!-- METADATA -->
+          <dl class="info-grid" style="grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 0 0 20px 0;">
+            <div class="info-card" style="min-height: auto; padding: 16px;">
+              <dt>Location</dt>
+              <dd style="font-size: 16px;">Parañaque City</dd>
+            </div>
+            <div class="info-card" style="min-height: auto; padding: 16px;">
+              <dt>Completed</dt>
+              <dd style="font-size: 16px;">1981</dd>
+            </div>
+            <div class="info-card" style="min-height: auto; padding: 16px;">
+              <dt>Type</dt>
+              <dd style="font-size: 16px;">Transit Infrastructure</dd>
+            </div>
+          </dl>
+
+          <!-- STYLISTIC EVOLUTION -->
+          <div class="prose">
+            <p>
+              <strong>Stylistic Evolution:</strong> Applies Locsin's tropical modernist principles to functional transit infrastructure, adapting international transportation standards to local climate demands.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- BOTTOM: ELEMENTS & PRINCIPLES -->
+      <div class="facts-grid" style="grid-template-columns: repeat(2, 1fr); gap: 24px;">
+        <div class="fact-card">
+          <summary>Elements of Art</summary>
+          <ul style="margin-top: 12px; padding-left: 18px; font-size: 16px; line-height: 1.7; color: rgba(235, 213, 171, 0.88);">
+            <li style="margin-bottom: 8px;"><strong>Line &amp; Geometry:</strong> Clean horizontal lines and rectangular window geometries organize the visual flow of a high-traffic terminal.</li>
+            <li><strong>Texture &amp; Material:</strong> Smooth structural concrete is combined with warm wooden paneling inside, balancing durability with tactile warmth.</li>
+          </ul>
+        </div>
+
+        <div class="fact-card">
+          <summary>Principles of Design</summary>
+          <ul style="margin-top: 12px; padding-left: 18px; font-size: 16px; line-height: 1.7; color: rgba(235, 213, 171, 0.88);">
+            <li style="margin-bottom: 8px;"><strong>Rhythm &amp; Flow:</strong> Repeating structural bays guide passenger movement logically through arrival, departure, and baggage circulation zones.</li>
+            <li><strong>Emphasis &amp; Functionality:</strong> Deep exterior overhangs emphasize shade and rain protection, adapting modern international airport standards to tropical rainfall.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. ISTANA NURUL IMAN -->
+    <section class="section section--beige" id="istana" style="padding-top: 110px; padding-bottom: 110px;">
+      <div class="section-heading">
+        <p class="lx-kicker-dark">Famous Work · 05</p>
+        <h2>Istana Nurul Iman</h2>
+      </div>
+
+      <div class="split-grid" style="align-items: start; margin-bottom: 36px;">
+        <!-- LEFT: MAIN IMAGE -->
+        <div class="split-image-col">
+          <figure class="photo-block">
+            <img src="assets/images/building photos/Istana Nurul Iman (Palace of the Sultan of Brunei)/330px-Istana_Nurul_Iman_Brunei.jpg" alt="Istana Nurul Iman Palace" style="height: 480px; object-fit: cover;">
+            <figcaption>
+              <strong>Istana Nurul Iman (1984)</strong> — Bandar Seri Begawan, Brunei. The world's largest residential state palace.
+            </figcaption>
+          </figure>
+        </div>
+
+        <!-- RIGHT: TWO SMALL PICTURE BOXES + METADATA + STYLISTIC EVOLUTION -->
+        <div class="split-text-col">
+          <!-- TWO SMALL PICTURE BOXES -->
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px;">
+            <figure class="photo-block" style="box-shadow: 4px 4px 0 var(--accent-green);">
+              <img src="assets/images/building photos/Istana Nurul Iman (Palace of the Sultan of Brunei)/istana-dome-detail.jpg" alt="Istana Nurul Iman golden dome detail" style="height: 250px; object-fit: cover;">
+            </figure>
+            <figure class="photo-block" style="box-shadow: 4px 4px 0 var(--accent-green);">
+              <img src="assets/images/building photos/Istana Nurul Iman (Palace of the Sultan of Brunei)/istana-roofline.jpg" alt="Istana Nurul Iman sweeping rooflines" style="height: 250px; object-fit: cover;">
+            </figure>
+          </div>
+
+          <!-- METADATA -->
+          <dl class="info-grid" style="grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 0 0 20px 0;">
+            <div class="info-card" style="min-height: auto; padding: 16px;">
+              <dt>Location</dt>
+              <dd style="font-size: 12px; color: var(--ink);">Bandar Seri Begawan, Brunei</dd>
+            </div>
+            <div class="info-card" style="min-height: auto; padding: 16px;">
+              <dt>Completed</dt>
+              <dd style="font-size: 12px; color: var(--ink);">1984</dd>
+            </div>
+            <div class="info-card" style="min-height: auto; padding: 16px;">
+              <dt>Type</dt>
+              <dd style="font-size: 12px; color: var(--ink);">Royal Palace &amp; State Residence</dd>
+            </div>
+          </dl>
+
+          <!-- STYLISTIC EVOLUTION -->
+          <div class="prose">
+            <p>
+              <strong>Stylistic Evolution:</strong> Represents Locsin's international expansion, adapting Southeast Asian vernacular motifs into the sultan's palace, one of the largest residential palaces in the world and his biggest overseas commission.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- BOTTOM: ELEMENTS & PRINCIPLES -->
+      <div class="facts-grid" style="grid-template-columns: repeat(2, 1fr); gap: 24px;">
+        <div class="fact-card" style="background: #e2cca1; border-color: var(--line);">
+          <summary style="color: var(--bg-dark);">Elements of Art</summary>
+          <ul style="margin-top: 12px; padding-left: 18px; font-size: 16px; line-height: 1.7; color: var(--ink);">
+            <li style="margin-bottom: 8px;"><strong>Form &amp; Texture:</strong> Merges monumental concrete framing with traditional Islamic geometric motifs, gilded domes, and dramatic sloped roof surfaces.</li>
+            <li><strong>Space &amp; Scale:</strong> Covers over 2.2 million square feet, organizing grand banquet halls, royal courtyards, and state quarters into a unified palace complex.</li>
+          </ul>
+        </div>
+
+        <div class="fact-card" style="background: #e2cca1; border-color: var(--line);">
+          <summary style="color: var(--bg-dark);">Principles of Design</summary>
+          <ul style="margin-top: 12px; padding-left: 18px; font-size: 16px; line-height: 1.7; color: var(--ink);">
+            <li style="margin-bottom: 8px;"><strong>Unity &amp; Variety:</strong> Blends modern structural brutalism with traditional Islamic and Malay architectural forms.</li>
+            <li><strong>Hierarchy &amp; Dominance:</strong> The central gold-leaf dome is the primary focal point, anchoring the surrounding administrative and residential wings.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPO '70 (MERGED SECTION) ===== -->
+    <section class="section section--dark" id="expo70" style="padding-top: 110px; padding-bottom: 110px;">
+      <div class="split-grid">
+        <div class="split-text-col">
+          <div class="section-heading">
+            <p class="lx-kicker-light">International Case Study</p>
+            <h2 style="color: var(--warm-beige);">The Philippine Pavilion at Expo '70</h2>
+            <p class="section-intro">
+              An expressionist shell interpretation representing modern Philippine architecture on the international stage.
+            </p>
+          </div>
+
+          <div class="prose">
+            <p>
+              Locsin's impact extended beyond buildings in the Philippines. In 1970 he designed the Philippine Pavilion at Expo '70 in Osaka, Japan.
+            </p>
+            <p>
+              The pavilion showed how Philippine architecture could be represented internationally through modern forms rather than through a literal reproduction of traditional buildings. The National Commission for Culture and the Arts referred to Locsin's pavilion as an expressionist interpretation of a shell.
+            </p>
+          </div>
+        </div>
+
+        <div class="split-image-col">
+          <figure class="photo-block" style="background: var(--bg-dark); border-color: rgba(235,213,171,0.3);">
+            <img src="assets/images/building photos/Philippine Pavilion at Expo '70/expo70-philippine-pavilion.jpg" alt="Philippine Pavilion at Expo '70 in Osaka, Japan" style="height: 420px; object-fit: cover;">
+            <figcaption style="background: #252d24; color: var(--warm-beige);">
+              <strong>Philippine Pavilion at Expo '70 (1970)</strong> — Osaka, Japan. An expressionist shell interpretation.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MORE FROM THE GALLERY (WITH PHOTOS ON TOP) ===== -->
+    <section class="section section--beige" id="more" style="padding-top: 110px; padding-bottom: 110px;">
+      <div class="section-heading">
+        <p class="lx-kicker-dark">Portfolio Highlights</p>
+        <h2>More from the gallery</h2>
+        <p class="section-intro">Three additional landmark architectural projects designed by Leandro V. Locsin.</p>
+      </div>
+
+      <div class="facts-grid" style="grid-template-columns: repeat(3, 1fr); gap: 24px;">
+        
+        <!-- AYALA MUSEUM -->
+        <article class="photo-block" style="display: flex; flex-direction: column;">
+          <img src="assets/images/building photos/Ayala Museum/ayala-museum.jpg" alt="Ayala Museum designed by Leandro Locsin" style="height: 230px; object-fit: cover; width: 100%;">
+          <div style="padding: 22px; background: #dfc89d; flex-grow: 1;">
+            <h3 style="font-family: var(--font-title); font-size: 20px; margin-bottom: 4px; color: var(--ink);">Ayala Museum</h3>
+            <p style="font-size: 13px; font-weight: 700; color: var(--accent-green); margin-bottom: 10px;">1967 · Makati City</p>
+            <p style="font-size: 13.5px; line-height: 1.65; color: rgba(27, 33, 26, 0.88);">An early example of his work for a private cultural institution, demonstrating clean modernist lines for art and historical preservation.</p>
+          </div>
+        </article>
+
+        <!-- FOLK ARTS THEATER -->
+        <article class="photo-block" style="display: flex; flex-direction: column;">
+          <img src="assets/images/building photos/Folk Arts Theater/folk-arts-theater.jpg" alt="Folk Arts Theater designed by Leandro Locsin" style="height: 230px; object-fit: cover; width: 100%;">
+          <div style="padding: 22px; background: #dfc89d; flex-grow: 1;">
+            <h3 style="font-family: var(--font-title); font-size: 20px; margin-bottom: 4px; color: var(--ink);">Folk Arts Theater</h3>
+            <p style="font-size: 13px; font-weight: 700; color: var(--accent-green); margin-bottom: 10px;">1974 · Pasay City (CCP Complex)</p>
+            <p style="font-size: 13.5px; line-height: 1.65; color: rgba(27, 33, 26, 0.88);">A large open-air covered venue, famously constructed within a record 77-day construction period for an international pageant.</p>
+          </div>
+        </article>
+
+        <!-- MANILA FILM CENTER -->
+        <article class="photo-block" style="display: flex; flex-direction: column;">
+          <img src="assets/images/building photos/Manila Film Center/manila-film-center.jpg" alt="Manila Film Center designed by Leandro Locsin" style="height: 230px; object-fit: cover; width: 100%;">
+          <div style="padding: 22px; background: #dfc89d; flex-grow: 1;">
+            <h3 style="font-family: var(--font-title); font-size: 20px; margin-bottom: 4px; color: var(--ink);">Manila Film Center</h3>
+            <p style="font-size: 13px; font-weight: 700; color: var(--accent-green); margin-bottom: 10px;">1981 · Pasay City (CCP Complex)</p>
+            <p style="font-size: 13.5px; line-height: 1.65; color: rgba(27, 33, 26, 0.88);">Built for the Manila International Film Festival. It remains an important civic structure, remembered as well for its complex historic construction context.</p>
+          </div>
+        </article>
+
+      </div>
+
+      <div style="margin-top: 56px; text-align: center;">
+        <a class="btn btn--primary" href="legacy.html">Continue to Legacy &rarr;</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-wrap">
+      <div class="footer-copy">
+        <strong>Leandro V. Locsin: Architect of Modern Filipino Identity</strong><br>
+        Virtual Exhibition · Research-based curation
+      </div>
+      <div class="footer-copy">
+        1928–1994 · Silay City, Philippines
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== JS FOR DIRECTIONAL SCROLL HIDE/SHOW & BEIGE BACKGROUND TRANSITION ===== -->
+  <script>
+    const header = document.getElementById('main-header');
+    let lastScrollY = window.scrollY;
+
+    window.addEventListener('scroll', () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY && currentScrollY > 80) {
+        header.classList.add('nav-hidden');
+      } else {
+        header.classList.remove('nav-hidden');
+      }
+
+      if (currentScrollY > 40) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+
+      lastScrollY = currentScrollY;
+    });
+  </script>
+
 </body>
 </html>
