@@ -1,11 +1,424 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Philosophy of Leandro Locsin</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Architectural philosophy, tropical modernism, art theory, and cultural identity in the work of Leandro V. Locsin.">
+  <title>Philosophy &amp; Art Theory — Leandro V. Locsin Exhibit</title>
+
+  <!-- Font Imports: Space Grotesk + Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <!-- ===== HEADER / NAVIGATION ===== -->
+  <header class="lx-header" id="main-header">
+    <a class="lx-brand" href="index.html" aria-label="Leandro Locsin exhibition home">
+      <span class="lx-brand-mark" aria-hidden="true">
+        <i></i><i></i><i></i>
+      </span>
+      <span class="lx-brand-copy">
+        <strong>LEANDRO V. LOCSIN</strong>
+        <small>ARCHITECT OF A NATION</small>
+      </span>
+    </a>
+
+    <nav class="lx-nav" id="primary-nav" aria-label="Primary navigation">
+      <a href="index.html"><span class="lx-nav-number">01</span>Exhibit</a>
+      <a href="biography.html"><span class="lx-nav-number">02</span>Biography</a>
+      <a href="philosophy.html" aria-current="page"><span class="lx-nav-number">03</span>Philosophy</a>
+      <a href="works.html"><span class="lx-nav-number">04</span>Works</a>
+      <a href="legacy.html"><span class="lx-nav-number">05</span>Legacy</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="section section--dark" id="hero" style="position: relative; min-height: 76vh; display: flex; align-items: center; background: linear-gradient(rgba(27, 33, 26, 0.92), rgba(27, 33, 26, 0.72)), url('assets/images/building photos/Chapel of the Holy Sacrifice/interior/interior1.jpg') center/cover no-repeat; padding-top: 180px; padding-bottom: 120px;">
+      <div class="section-heading" style="max-width: 960px; margin-bottom: 0;">
+        <p class="lx-kicker-light" style="font-size: 13px; letter-spacing: 0.22em;">Section VII–XV · Core Architectural Philosophy</p>
+        <h1 style="font-size: clamp(52px, 7vw, 92px); color: var(--warm-beige); line-height: 1.02; margin-bottom: 22px;">Philosophy &amp; Art Theory</h1>
+        <p class="section-intro" style="font-size: 22px; line-height: 1.75; color: rgba(235, 213, 171, 0.92); max-width: 820px;">
+          How Locsin translated traditional tropical intelligence, musical rhythm, light, and monumental concrete forms into a distinct modern Filipino architectural language.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== ENLARGED ON-PAGE NAVIGATION BAR ===== -->
+    <section class="section section--dark" id="toc-nav" style="padding-top: 36px; padding-bottom: 36px; border-top: 1px solid rgba(235,213,171,0.15); border-bottom: 1px solid rgba(235,213,171,0.15); background: var(--bg-dark);">
+      <div class="info-grid" style="grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 16px; margin: 0;">
+        <a class="info-card" href="#pillars" style="min-height: auto; padding: 20px 22px; text-decoration: none; border-color: rgba(235, 213, 171, 0.25);">
+          <dt style="font-size: 12.5px; font-weight: 700; margin-bottom: 6px; letter-spacing: 0.1em;">01. Foundation</dt>
+          <dd style="font-size: 16px; font-weight: 600; color: var(--warm-beige); line-height: 1.35;">Five Pillars of Architecture</dd>
+        </a>
+        <a class="info-card" href="#bahay-kubo" style="min-height: auto; padding: 20px 22px; text-decoration: none; border-color: rgba(235, 213, 171, 0.25);">
+          <dt style="font-size: 12.5px; font-weight: 700; margin-bottom: 6px; letter-spacing: 0.1em;">02. Abstraction</dt>
+          <dd style="font-size: 16px; font-weight: 600; color: var(--warm-beige); line-height: 1.35;">Bahay Kubo &amp; Floating Volume</dd>
+        </a>
+        <a class="info-card" href="#synthesis" style="min-height: auto; padding: 20px 22px; text-decoration: none; border-color: rgba(235, 213, 171, 0.25);">
+          <dt style="font-size: 12.5px; font-weight: 700; margin-bottom: 6px; letter-spacing: 0.1em;">03. Fine Arts</dt>
+          <dd style="font-size: 16px; font-weight: 600; color: var(--warm-beige); line-height: 1.35;">Architecture as Synthesis</dd>
+        </a>
+        <a class="info-card" href="#identity" style="min-height: auto; padding: 20px 22px; text-decoration: none; border-color: rgba(235, 213, 171, 0.25);">
+          <dt style="font-size: 12.5px; font-weight: 700; margin-bottom: 6px; letter-spacing: 0.1em;">04. Identity</dt>
+          <dd style="font-size: 16px; font-weight: 600; color: var(--warm-beige); line-height: 1.35;">Filipino Cultural Identity</dd>
+        </a>
+        <a class="info-card" href="#elements" style="min-height: auto; padding: 20px 22px; text-decoration: none; border-color: rgba(235, 213, 171, 0.25);">
+          <dt style="font-size: 12.5px; font-weight: 700; margin-bottom: 6px; letter-spacing: 0.1em;">05. Visual Field</dt>
+          <dd style="font-size: 16px; font-weight: 600; color: var(--warm-beige); line-height: 1.35;">Elements of Art</dd>
+        </a>
+        <a class="info-card" href="#principles" style="min-height: auto; padding: 20px 22px; text-decoration: none; border-color: rgba(235, 213, 171, 0.25);">
+          <dt style="font-size: 12.5px; font-weight: 700; margin-bottom: 6px; letter-spacing: 0.1em;">06. Composition</dt>
+          <dd style="font-size: 16px; font-weight: 600; color: var(--warm-beige); line-height: 1.35;">Principles of Design</dd>
+        </a>
+        <a class="info-card" href="#why-art" style="min-height: auto; padding: 20px 22px; text-decoration: none; border-color: rgba(235, 213, 171, 0.25);">
+          <dt style="font-size: 12.5px; font-weight: 700; margin-bottom: 6px; letter-spacing: 0.1em;">07. Essay</dt>
+          <dd style="font-size: 16px; font-weight: 600; color: var(--warm-beige); line-height: 1.35;">Why Architecture is Art</dd>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 1: FIVE PILLARS ===== -->
+    <section class="section section--dark" id="pillars" style="padding-top: 110px; padding-bottom: 110px;">
+      <div class="section-heading">
+        <p class="lx-kicker-light">Section VII · Core Framework</p>
+        <h2 style="color: var(--warm-beige);">Five Pillars of Locsin's Architecture</h2>
+        <p class="section-intro">
+          His design language repeatedly explores monumental weight, open space, structural expression, climate response, and the dramatic interplay of light across concrete.
+        </p>
+      </div>
+
+      <div class="facts-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px;">
+        <article class="fact-card" style="min-height: auto;">
+          <summary>1. Floating Volume</summary>
+          <p style="font-size: 14.5px; line-height: 1.7; color: rgba(235, 213, 171, 0.9);">
+            One of Locsin's signature techniques. His structures frequently feature massive concrete blocks or roof assemblies suspended over recessed glass walls, dark shadows, or open plazas. This creates a striking visual tension between monumental weight and weightlessness.
+          </p>
+        </article>
+
+        <article class="fact-card" style="min-height: auto;">
+          <summary>2. Mass and Space</summary>
+          <p style="font-size: 14.5px; line-height: 1.7; color: rgba(235, 213, 171, 0.9); margin-bottom: 8px;">
+            Locsin systematically explored the dualities of architectural composition:
+          </p>
+          <ul style="padding-left: 18px; font-size: 13.5px; color: var(--highlight-green); line-height: 1.6;">
+            <li>Solid vs. Open</li>
+            <li>Heavy vs. Light</li>
+            <li>Enclosed vs. Transparent</li>
+            <li>Shadow vs. Sunlight</li>
+          </ul>
+        </article>
+
+        <article class="fact-card" style="min-height: auto;">
+          <summary>3. Structural Concrete</summary>
+          <p style="font-size: 14.5px; line-height: 1.7; color: rgba(235, 213, 171, 0.9);">
+            Concrete was Locsin's primary artistic medium. He used concrete not merely as structural support, but as a sculptural, expressive material capable of defining broad planes, cantilevered overhangs, and clean geometric forms.
+          </p>
+        </article>
+
+        <article class="fact-card" style="min-height: auto;">
+          <summary>4. Filipino Modernism</summary>
+          <p style="font-size: 14.5px; line-height: 1.7; color: rgba(235, 213, 171, 0.9); margin-bottom: 8px;">
+            He articulated a tropical modernist framework by adapting traditional indigenous features to large-scale modern buildings:
+          </p>
+          <ul style="padding-left: 18px; font-size: 13.5px; color: var(--highlight-green); line-height: 1.6;">
+            <li>Open spatial flow and elevated platforms</li>
+            <li>Wide overhanging roofs and extended eaves</li>
+            <li>High ceiling clearances and cross-ventilation</li>
+            <li>Direct orientation toward the natural landscape</li>
+          </ul>
+        </article>
+
+        <article class="fact-card" style="min-height: auto; grid-column: span 1 / -1;">
+          <summary>5. Chiaroscuro (Light and Shadow)</summary>
+          <p style="font-size: 14.5px; line-height: 1.7; color: rgba(235, 213, 171, 0.9);">
+            Locsin treated sunlight and shade as active design elements. Wide overhangs, deep recesses, and geometric openings cast heavy shadows across concrete surfaces, generating dynamic visual contrast throughout the day.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 2: BAHAY KUBO AND FLOATING VOLUME ===== -->
+    <section class="section section--beige" id="bahay-kubo" style="padding-top: 110px; padding-bottom: 110px;">
+      <div class="section-heading">
+        <p class="lx-kicker-dark">Architectural Evolution</p>
+        <h2>Tropical Modernism: <em style="color: var(--accent-green);">The Bahay Kubo and Floating Volume</em> </h2>
+        <p class="section-intro">
+          Abstracting traditional tropical climate intelligence into monumental reinforced concrete.
+        </p>
+      </div>
+
+      <div class="prose" style="max-width: 900px; margin-bottom: 40px;">
+        <p>
+          Locsin's defining concept was a large, heavy-looking mass resting lightly above a recessed base. This architectural motif directly echoes the traditional <em>bahay kubo</em>, which is elevated on stilts or wooden posts beneath a massive, sheltering thatched roof.
+        </p>
+        <p>
+          Instead of copying historical structures literally, Locsin abstracted their functional principles into modern materials. In his buildings, the overhanging upper volume provides essential climate protection and shade, the recessed glass perimeter invites natural cross-ventilation and fluid spatial flow, and the resulting structure achieves a soaring, floating presence against the landscape.
+        </p>
+      </div>
+
+      <!-- SIDE-BY-SIDE COMPARISON -->
+      <div class="split-grid" style="align-items: stretch; margin-bottom: 48px;">
+        <figure class="photo-block" style="display: flex; flex-direction: column;">
+          <img src="assets/images/building photos/Others Buildings/bahay-kubo.jpg" alt="Traditional Bahay Kubo raised on posts under a large roof" style="aspect-ratio: 3 / 2; width: 100%; object-fit: cover;">
+          <figcaption style="flex-grow: 1;">
+            <strong>Traditional Bahay Kubo</strong> — Raised on stilts with a high, sloping roof for ventilation, shading, and flood protection.
+          </figcaption>
+        </figure>
+
+        <figure class="photo-block" style="display: flex; flex-direction: column;">
+          <img src="assets\images\building photos\Cultural Center of the Philippines\Cultural Centre of The Philippines [Sentrong Pangkultura ng Pilipinas], Manila.jpg" alt="Cultural Center of the Philippines Main Building showing floating mass" style="aspect-ratio: 3 / 2; width: 100%; object-fit: cover;">
+          <figcaption style="flex-grow: 1;">
+            <strong>Cultural Center of the Philippines (1969)</strong> — An 8-story travertine block cantilevered 12 meters outward over a recessed glass podium, translating the bahay kubo elevation into a modern floating volume.
+          </figcaption>
+        </figure>
+      </div>
+
+      <!-- MATERIALS SUBSECTION -->
+      <div class="fact-card" style="background: #e2cca1; border-color: var(--line); padding: 32px;">
+        <summary style="color: var(--bg-dark); font-size: 22px;">Materiality: Structural Concrete and Travertine Stone</summary>
+        <p style="font-size: 15px; line-height: 1.8; color: var(--ink); margin-top: 12px;">
+          Locsin favored exposed aggregate concrete paired with travertine stone—a pale limestone characterized by natural pitted textures. Concrete offered unlimited sculptural freedom for broad planes and massive cantilevers, while travertine gave civic surfaces a warm, timeless dignity. This material duo became his signature visual trademark across national projects like the CCP, PICC, and Manila Hotel expansion.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 3: ARCHITECTURE AS SYNTHESIS ===== -->
+    <section class="section section--dark" id="synthesis" style="padding-top: 110px; padding-bottom: 110px;">
+      <div class="split-grid" style="align-items: center;">
+        <div class="split-text-col">
+          <div class="section-heading">
+            <p class="lx-kicker-light">Section XI · Locsin &amp; Other Forms of Art</p>
+            <h2 style="color: var(--warm-beige);">Architecture as Synthesis</h2>
+            <p class="section-intro">
+              Locsin viewed architecture as a complete synthesis of fine arts rather than a isolated building trade.
+            </p>
+          </div>
+
+          <div class="prose">
+            <p>
+              Having enrolled at the University of Santo Tomas Conservatory of Music in 1947 as an accomplished pianist before pursuing architecture, Locsin approached spatial design with an acute musical sensibility. His musical training directly informed his understanding of architectural rhythm, spatial cadence, structural pauses, and visual harmony.
+            </p>
+            <p>
+              His design process integrated sculpture, painting, and landscape design directly into his structural blueprints. The Chapel of the Holy Sacrifice (1955) stands as the supreme example of this total synthesis—uniting architecture with sculpture through Napoleon Abueva's carved double-sided crucifix, and with fine painting through Vicente Manansala and Ang Kiukok's Stations of the Cross murals alongside Arturo Luz's geometric terrazzo floor layout.
+            </p>
+          </div>
+        </div>
+
+        <div class="split-image-col">
+          <figure class="photo-block" style="background: var(--bg-dark); border-color: rgba(235,213,171,0.3);">
+            <img src="assets/images/building photos/Chapel of the Holy Sacrifice/interior/interior1.jpg" alt="Chapel of the Holy Sacrifice interior showing integrated artwork" style="aspect-ratio: 3 / 2; width: 100%; object-fit: cover;">
+            <figcaption style="background: #252d24; color: var(--warm-beige);">
+              <strong>Chapel of the Holy Sacrifice Interior</strong> — Synthesizing architecture, sculpture (Abueva), and painting (Manansala, Ang Kiukok, Luz) within a single thin-shell dome enclosure.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 4: FILIPINO CULTURAL IDENTITY ===== -->
+    <section class="section section--beige" id="identity" style="padding-top: 110px; padding-bottom: 110px;">
+      <div class="section-heading">
+        <p class="lx-kicker-dark">Section XII · Cultural Identity</p>
+        <h2>Traditional Principles, Modern Expression</h2>
+        <p class="section-intro">
+          The goal was never literal historical reproduction—it was modern translation.
+        </p>
+      </div>
+
+      <div class="split-grid" style="align-items: start;">
+        <div class="split-text-col">
+          <h3 style="font-family: var(--font-title); font-size: 22px; margin-bottom: 16px; color: var(--ink);">Traditional Climate Intelligence</h3>
+          <ul style="padding-left: 20px; font-size: 15px; line-height: 1.8; color: var(--ink);">
+            <li style="margin-bottom: 10px;"><strong>Elevated floors and open spatial layouts</strong> for tropical flood resilience and cooling airflow.</li>
+            <li style="margin-bottom: 10px;"><strong>Wide overhanging eaves and steep roofs</strong> to shed monsoon rains and shade perimeter walls.</li>
+            <li style="margin-bottom: 10px;"><strong>Permeable walls and louvered screens</strong> for continuous cross-ventilation.</li>
+            <li><strong>Shaded outdoor-indoor transition zones</strong> connecting interior spaces to surrounding greenery.</li>
+          </ul>
+        </div>
+
+        <div class="split-text-col">
+          <h3 style="font-family: var(--font-title); font-size: 22px; margin-bottom: 16px; color: var(--ink);">Locsin's Modern Translation</h3>
+          <div class="prose">
+            <p>
+              Locsin translated these climate-responsive spatial principles into modern reinforced concrete, steel, and glass.
+            </p>
+            <p>
+              Instead of recreating historical <em>bahay kubo</em> or <em>bahay na bato</em> structures literally, he abstracted their functional qualities into large modern civic buildings. By converting open plans, sweeping overhangs, and shaded spaces into cantilevered concrete forms, he established the foundation of authentic modern Filipino architecture.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 5: ELEMENTS OF ART ===== -->
+    <section class="section section--dark" id="elements" style="padding-top: 110px; padding-bottom: 110px;">
+      <div class="section-heading">
+        <p class="lx-kicker-light">Section XIII · Visual Field</p>
+        <h2 style="color: var(--warm-beige);">Elements of Art in Locsin's Architecture</h2>
+        <p class="section-intro">
+          His buildings operate as an organized visual field of line, shape, form, space, texture, and value.
+        </p>
+      </div>
+
+      <div class="facts-grid" style="grid-template-columns: repeat(3, 1fr); gap: 20px;">
+        <div class="fact-card" style="min-height: auto;">
+          <summary>Line</summary>
+          <p style="font-size: 14px; line-height: 1.65; color: rgba(235, 213, 171, 0.88);">Dominant horizontal cantilever bands, vertical support piers, and sweeping curved parabolic arches.</p>
+        </div>
+
+        <div class="fact-card" style="min-height: auto;">
+          <summary>Shape</summary>
+          <p style="font-size: 14px; line-height: 1.65; color: rgba(235, 213, 171, 0.88);">Clean geometric rectangles, circular footprints, and sloping roof planes.</p>
+        </div>
+
+        <div class="fact-card" style="min-height: auto;">
+          <summary>Form</summary>
+          <p style="font-size: 14px; line-height: 1.65; color: rgba(235, 213, 171, 0.88);">Massive three-dimensional concrete volumes and sculptural structural masses.</p>
+        </div>
+
+        <div class="fact-card" style="min-height: auto;">
+          <summary>Space</summary>
+          <p style="font-size: 14px; line-height: 1.65; color: rgba(235, 213, 171, 0.88);">Fluid interior-exterior spatial flow, expansive open plazas, and column-free vaulted interiors.</p>
+        </div>
+
+        <div class="fact-card" style="min-height: auto;">
+          <summary>Texture</summary>
+          <p style="font-size: 14px; line-height: 1.65; color: rgba(235, 213, 171, 0.88);">Exposed aggregate concrete, board-formed wood-grain impressions, travertine stone, and smooth glass curtain walls.</p>
+        </div>
+
+        <div class="fact-card" style="min-height: auto;">
+          <summary>Value (Light &amp; Shadow)</summary>
+          <p style="font-size: 14px; line-height: 1.65; color: rgba(235, 213, 171, 0.88);">Dynamic light-and-shadow contrast (chiaroscuro) produced by deep overhangs and sun-shaded recesses throughout the day.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 6: PRINCIPLES OF DESIGN ===== -->
+    <section class="section section--beige" id="principles" style="padding-top: 110px; padding-bottom: 110px;">
+      <div class="section-heading">
+        <p class="lx-kicker-dark">Section XIV · Organizational Composition</p>
+        <h2>Principles of Design in Locsin's Architecture</h2>
+        <p class="section-intro">
+          How balance, contrast, rhythm, proportion, scale, and unity organize his monumental structures.
+        </p>
+      </div>
+
+      <div class="facts-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+        <div class="fact-card" style="background: #e2cca1; border-color: var(--line); min-height: auto;">
+          <summary style="color: var(--bg-dark);">Balance</summary>
+          <p style="font-size: 14px; line-height: 1.65; color: var(--ink);">Radial balance in circular structures like UP Chapel, and symmetrical or asymmetrical balance in monumental public complexes.</p>
+        </div>
+
+        <div class="fact-card" style="background: #e2cca1; border-color: var(--line); min-height: auto;">
+          <summary style="color: var(--bg-dark);">Contrast</summary>
+          <p style="font-size: 14px; line-height: 1.65; color: var(--ink);">Heavy concrete masses juxtaposed directly against light, transparent glass elements and open reflecting pools.</p>
+        </div>
+
+        <div class="fact-card" style="background: #e2cca1; border-color: var(--line); min-height: auto;">
+          <summary style="color: var(--bg-dark);">Rhythm</summary>
+          <p style="font-size: 14px; line-height: 1.65; color: var(--ink);">Repetition of modular concrete structural bays, columns, coffers, and cantilevered overhangs across building facades.</p>
+        </div>
+
+        <div class="fact-card" style="background: #e2cca1; border-color: var(--line); min-height: auto;">
+          <summary style="color: var(--bg-dark);">Proportion &amp; Scale</summary>
+          <p style="font-size: 14px; line-height: 1.65; color: var(--ink);">Monumental civic proportions designed for public impact, balanced against human-scale interior circulation and foyer spaces.</p>
+        </div>
+
+        <div class="fact-card" style="background: #e2cca1; border-color: var(--line); min-height: auto; grid-column: span 1 / -1;">
+          <summary style="color: var(--bg-dark);">Unity</summary>
+          <p style="font-size: 14px; line-height: 1.65; color: var(--ink);">A cohesive synthesis of modern materials, engineering logic, interior spatial flow, climate adaptation, and fine art integration.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 7: WHY ARCHITECTURE CAN BE CONSIDERED ART ===== -->
+    <section class="section section--dark" id="why-art" style="padding-top: 110px; padding-bottom: 110px;">
+      <div class="split-grid" style="align-items: center;">
+        
+        <!-- LEFT: PHOTO OF LEANDRO V. LOCSIN -->
+        <div class="split-image-col">
+          <figure class="photo-block">
+            <img src="assets/images/photos of leandro/working and drawing/Locsin1.jpg" alt="Leandro V. Locsin at work in his architectural studio" style="aspect-ratio: 4 / 3; width: 100%; object-fit: cover;">
+            <figcaption>
+              <strong>Leandro V. Locsin</strong> — Master architect whose buildings transform functional shelters into enduring national monuments.
+            </figcaption>
+          </figure>
+        </div>
+
+        <!-- RIGHT: ESSAY TEXT & CTA BUTTON -->
+        <div class="split-text-col">
+          <div class="section-heading" style="margin-bottom: 24px;">
+            <p class="lx-kicker-dark">Section XV · Analytical Essay</p>
+            <h2>Why His Architecture Can Be Considered Art</h2>
+            <p class="section-intro">
+              Architecture functions as both practical human shelter and a carrier of symbolic, cultural, and emotional meaning.
+            </p>
+          </div>
+
+          <div class="prose" style="font-size: 16px; line-height: 1.85;">
+            <p style="margin-bottom: 20px;">
+              Architecture serves functional human needs while simultaneously communicating symbolic meaning. Leandro V. Locsin's structures qualify as fine art because they are non-verbal expressions of national culture, spatial emotion, and structural poise.
+            </p>
+            <p style="margin-bottom: 32px;">
+              Through geometry, proportion, light, shadow, and material texture, his buildings transform functional shelters into enduring cultural monuments that communicate national aspirations, cultural pride, and historical continuity across generations.
+            </p>
+          </div>
+
+          <div>
+            <a class="btn btn--primary" href="works.html">View Featured Works &rarr;</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-wrap">
+      <div class="footer-copy">
+        <strong>Leandro V. Locsin: Architect of Modern Filipino Identity</strong><br>
+        Virtual Exhibition · Core Architectural Philosophy &amp; Fine Art Theory
+      </div>
+      <div class="footer-copy">
+        1928–1994 · Silay City, Philippines
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== JS FOR DIRECTIONAL SCROLL HIDE/SHOW & BEIGE BACKGROUND TRANSITION ===== -->
+  <script>
+    const header = document.getElementById('main-header');
+    let lastScrollY = window.scrollY;
+
+    window.addEventListener('scroll', () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY && currentScrollY > 80) {
+        header.classList.add('nav-hidden');
+      } else {
+        header.classList.remove('nav-hidden');
+      }
+
+      if (currentScrollY > 40) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+
+      lastScrollY = currentScrollY;
+    });
+  </script>
+
 </body>
 </html>
