@@ -6,7 +6,7 @@
 
 ## Context
 
-This project was created as an academic digital curation project at [De La Salle University - Dasmariñas](https://www.dlsud.edu.ph/).
+This project was created as the **Midterm Project for Art Appreciation** at [De La Salle University - Dasmariñas](https://www.dlsud.edu.ph/).
 
 To fulfill project guidelines, the website serves as a professional virtual exhibition dedicated to an assigned artist from the Order of National Artists. It assesses the team's mastery of digital curation, appreciation of local arts, and collaborative application of 21st-century skills by demonstrating:
 
@@ -52,7 +52,7 @@ Leandro-V-Locsin-Exhibit/
 Based on the development experience of building this virtual exhibition, the development team recommends the following improvements for future iterations:
 
 ### 1. Cross-Compatibility and Responsive Design
-* **Issue:** The current layout fails to adapt dynamically adapt to different screen sizes.
+* **Issue:** The current layout fails to adapt dynamically to different screen sizes.
 * **Recommendation:** Implement [CSS Media Queries](https://www.w3schools.com/css/css3_mediaqueries.asp) or a responsive layout model (like [Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) or [Grid](https://www.w3schools.com/css/css_grid.asp)) to ensure the website automatically scales and formats correctly across all platforms.
 
 ### 2. Page Transitions and Animations
