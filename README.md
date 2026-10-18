@@ -59,10 +59,10 @@ Based on the development experience of building this virtual exhibition, the dev
 * **Issue:** Navigating between the different car categories and pages feels abrupt and entirely static.
 * **Recommendation:** Utilize [CSS transitions](https://www.w3schools.com/css/css3_transitions.asp) and keyframe animations to create smooth hover effects and fluid page routing.
 
-### 4. Standardized Typography & Modular Scale
+### 3. Standardized Typography & Modular Scale
 * **Issue:** Font sizes for subtitles, cards, and metadata were chosen arbitrarily (e.g., mixing 12px and 14px) on the fly without a consistent scale.
 * **Recommendation:** Use a modular typographic scale based on Robert Bringhurst's [The Elements of Typographic Style](https://readings.design/PDF/the_elements_of_typographic_style.pdf) and an 8px grid baseline. This ensures all font sizes follow mathematical proportions for a clean visual hierarchy.
 
-### 5. Collaborative UI Component Standards & Team Communication
+### 4. Collaborative UI Component Standards & Team Communication
 * **Issue:** Button styles were inconsistent because team members styled them independently (e.g., some button hovers shifted to dark green while others shifted to light green).
 * **Recommendation:** Establish a centralized design system at the start of the project and keep team members aligned on button states, colors, and padding to ensure visual cohesion.
