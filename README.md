@@ -2,7 +2,7 @@
 
 ## Overview
 
-**Leandro V. Locsin** is a multi-page static virtual exhibition website designed to celebrate and explore the life, architectural philosophy, curated portfolio, and national legacy of **National Artist for Architecture Leandro V. Locsin**. Built as a comprehensive digital retrospective, the site features dedicated interactive pages examining his biographical timeline, core design framework (tropical modernism, floating volumes, and chiaroscuro), architectural masterpieces, heritage conservation debates, and academic citations.
+The **Leandro Locsin Exhibit** is a multi-page static virtual exhibition website designed to celebrate and explore the life, architectural philosophy, curated portfolio, and national legacy of **National Artist for Architecture Leandro V. Locsin**. Built as a comprehensive digital retrospective, the site features dedicated interactive pages examining his biographical timeline, core design framework (tropical modernism, floating volumes, and chiaroscuro), architectural masterpieces, heritage conservation debates, and academic citations.
 
 ## Context
 
@@ -45,7 +45,7 @@ Leandro-V-Locsin-Exhibit/
 ├── legacy.html          # Lasting national impact, heritage conservation, references, and team credits
 ├── css/
 │   └── style.css
-└── assets/              # Archival photos, portraits, building photography, and team headshots
+└── assets/              # Archival photos, portraits, building photography, and team 1x1 headshots
 ```
 
 ## Recomendations
